@@ -78,7 +78,7 @@ function App() {
           <Text color='#90CDF4'>Web3: {web3state.isWeb3 ? 'injected' : 'no-injected'}</Text>
           {!web3state.isLogged && (
             <>
-            <Button onClick={login}>login</Button>
+            <Button colorScheme="blue" onClick={login}>login</Button>
             </>
           )}
           <Text color='#90CDF4'>Network id: {web3state.chainId}</Text>
