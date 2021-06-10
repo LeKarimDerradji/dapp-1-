@@ -1,14 +1,22 @@
 import { ColorModeScript } from '@chakra-ui/react';
+import {Web3Provider} from 'web3-hooks';
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import {
+Center, 
+} from '@chakra-ui/react';
 
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
+    <Web3Provider>
+      <Center>
     <App />
+    </Center>
+    </Web3Provider>
   </StrictMode>,
   document.getElementById('root')
 );
